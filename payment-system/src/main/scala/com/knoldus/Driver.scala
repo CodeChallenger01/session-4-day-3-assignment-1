@@ -8,6 +8,7 @@ object Driver extends App {
   private val addPaymentMethod = paymentObject.addAnotherPayment("credit-card") ++ paymentObject.addAnotherPayment("paypal")
   private val listOfPaymentMethod = addPaymentMethod ++ paymentObject.addAnotherPayment("bank-transfer")
   print("After Adding New Payment Methods to List :\n" + listOfPaymentMethod)
+
   private val viewPaymentMethod = paymentObject.listAllPaymentMethods(listOfPaymentMethod)
   print("\n\nView what are the payments option available for user:\n" + viewPaymentMethod)
 
