@@ -5,15 +5,16 @@ This assignment contains  session-4-day-3-assignment-1(Payment)
 **Step 2:** Create **three scala fil**e with same class name in **src/main/scala/com/knoldus**       
         **1. PaymentMethod      
         2. PaymentProcess          
-        3. Driver** 
-**Step 3:** In PaymentMethod file create a class **PaymentMethod** and declare an empty list of payment methods. Define three method inside that class
-        **1. addAnotherPayment :** It take type of **payment method and match with the type** and create that type of payment method with details and                        add it to newList of payment methods.
-           **It contains three type:**
-              **i. credit-card
-              ii. paypal
-              iii. bank-transfer**
-        **2. listAllPaymentMethods:** This method is used **to view the list of all the payment** available for transaction
-        **3. selectProcessPayment:** In this method we **perform the payment process** by matching with type of payment and after that call paymentProcess                  method from PaymentProcess class.     
+        3. Driver**      
+**Step 3:** In PaymentMethod file create a class **PaymentMethod** and declare an empty list of payment methods. Define three method inside that class  
+ **1. addAnotherPayment :** It take type of **payment method and match with the type** and create that type of payment method with details and add it to        newList of payment methods.
+ **It contains three type:**
+   **i. credit-card
+   ii. paypal
+   iii. bank-transfer**
+
+**2. listAllPaymentMethods:** This method is used **to view the list of all the payment** available for transaction   
+**3. selectProcessPayment:** In this method we **perform the payment process** by matching with type of payment and after that call paymentProcess                  method from PaymentProcess class.     
 **Step 4:** In PaymentProcess we declare a **trait of name PaymentProcess** and define a **abstract method of name paymentProcess** with return type String. Inside this scala file we declare three case class for CreditCard, Paypal, BankTransfer with their field.      
 **Step 5:** Each **case class extend the trait** and define the body part of** each payment with process** of money deduction by validating data.     
 **Step 6:** In Driver class create object of **PaymentMethod and add call method** to add new Payment methods and call each method to **check the functionality etc**.    
