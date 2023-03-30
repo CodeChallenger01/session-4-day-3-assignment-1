@@ -86,4 +86,11 @@ class PaymentMethodTest extends AnyFlatSpec with Matchers {
     expectedOutput shouldBe result
   }
 
+  "payment By Other 3 Method" should "not match with Payment Method process" in {
+    val processPaymentType: String = "upi-payment"
+    val result = paymentObject.selectProcessPayment(addedBankTransferMethod, processPaymentType)
+    val expectedOutput: String = s"Transfer Payment Successfully from Bank.\nBalance Left :900.0"
+    assert(expectedOutput != result)
+  }
+
 }
