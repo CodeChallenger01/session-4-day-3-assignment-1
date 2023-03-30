@@ -3,9 +3,9 @@ This assignment contains  session-4-day-3-assignment-1(Payment)
    
 **Step 1:** Open IntelliJ and create a new Project of Name **payment-system**     
 **Step 2:** Create **three scala fil**e with same class name in **src/main/scala/com/knoldus**
-        **1. PaymentMethod
+        '**1. PaymentMethod
         2. PaymentProcess
-        3. Driver**     
+        3. Driver**'  
 **Step 3:** In PaymentMethod file create a class **PaymentMethod** and declare an empty list of payment methods. Define three method inside that class
         **1. addAnotherPayment :** It take type of **payment method and match with the type** and create that type of payment method with details and                        add it to newList of payment methods.
            **It contains three type:**
